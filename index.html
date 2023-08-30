@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTWYC7YE7E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTWYC7YE7E');
+</script>
+    <title>Bienvenida - Generación 2023</title>
+</head>
+<body>
+    <header> 
+        <img class="logo" src="assets/img/FCEA_blanco.png" alt="">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="material-symbols-outlined">
+                    home
+                    </span></a></li>
+                <li><a href="index.html#recorrido2023">Fechas importantes</a></li>
+                <li><a href="#estructura">Primer semestre</a></li>
+                <li><a href="#carrerasFCEA">Carreras de FCEA</a></li> 
+                <li><a href="#info-estudiantes">Información solicitada a estudiantes</a></li>
+                <li><a href="becas.html">Becas</a></li>
+                <li><a href="apoyo.html">Apoyo a estudiantes</a></li>
+                <li><a href="info-relevante.html">Información relevante</a></li>        
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="barra material-symbols-outlined">menu
+            </span>
+        </label>
+    </header>
+    <!--<div class="hero-personajes">
+        <img src="assets/img/hero-personajes.png" alt="">
+    </div><!-->
+        <div id="intro" class="hero hero-responsive">
+            <video class="video-bg" autoplay muted loop src="assets/video/videoFCEA.mp4" type="video/mp4"></video>
+        </div>
+    <section id="recorrido2023">
+       <h2>Recorrido para la generación 2023</h2> 
+        <div class="container media-scroller snaps-inline vertical-scroll">
+            <div class="media-element" data-url="https://fcea.udelar.edu.uy/campanas/bienvenida2023/#inscripcionesabiertas" onclick="MostrarContenido(1)">
+                <img src="assets/img/icono1-INSCRIPCIONES.png" alt="inscripciones">
+                <p class="title" id="inscripciones">Inscripciones a FCEA abiertas</p>
+                <p>Del 31 de julio al 6 de agosto</p>
+            </div>
+            <div class="media-element" data-url="https://fcea.udelar.edu.uy/campanas/bienvenida2023/#unavezinscripto" onclick="MostrarContenido(2)">
+            <img src="assets/img/icono2-UNA VEZ INSCRIPTO.png" alt="una vez inscripto">
+            <p class="title" id="ya_inscripto">Una vez mi preinscripción fue aceptada</p>
+            </div>
+            <div class="media-element" onclick="MostrarContenido(3)">
+              <img src="assets/img/icono4-INSCRI A UC.png" alt="">
+              <p class="title">Inscripciones a Unidades Curriculares</p>
+              <p>Del 17 de julio al 9 de agosto</p>
+            </div>
+            <div class="media-element" onclick="MostrarContenido(4)">
+              <img src="assets/img/icono9-BLOQUES HORARIOS.png" alt="">
+              <p class="title">Organizá tu semana académica</p>
+              <p></p>
+            </div>
+            <div class="media-element" onclick="MostrarContenido(5)">
+              <img src="assets/img/icono3-CURSO INTRO.png" alt="curso introductorio">
+              <p class="title">Curso introductorio</p>
+              <p>Del 8 al 11 de agosto</p>
+            </div>
+            <div class="media-element" onclick="MostrarContenido(6)">
+            <img src="assets/img/icono5-UC A LAS QUE DEBO.png" alt="">
+            <p class="title">Unidades Curriculares a las que debo inscribirme</p>
+            </div>
+            <div class="media-element" onclick="MostrarContenido(7)">
+              <img src="assets/img/icono8-INICIO DE CLASES.png" alt="">
+              <p class="title">Inicio de clases</p>
+              <p>14 de agosto</p>
+            </div>
+            <div class="media-element" onclick="MostrarContenido(8)">
+            <img src="assets/img/icono6-PRUEBA DIAGNÓSTICA.png" alt="">
+            <p class="title">Prueba diagnóstica y Jornada de Bienvenida</p>
+            <p>15 de agosto</p>
+            <p></p>
+            </div>
+            <div class="media-element" onclick="MostrarContenido(9)">
+              <img src="assets/img/icono7-DESISTIR A UNA UC.png" alt="">
+              <p class="title">Desistir de una inscripción a una Unidad Curricular</p>
+              <p>Del 4 al 10 de setiembre</p>
+            </div>
+            
+        </div>
+        <div id="info" class="container">
+            <div class="info-1">
+                <h3>¿Cómo me inscribo a FCEA?</h3>
+                <p>El procedimiento de inscripción está disponible en este <a href="https://fcea.udelar.edu.uy/ingreso-a-fcea.html">enlace</a>.</p>
+                <p>Debes realizar la preinscripción vía web entre el 31 de julio y 6 de agosto de 2023.</p>
+                <p>En el enlace anterior encontrarás tutoriales que te guiarán durante el proceso. En caso de dudas escribí a <a href="mailto:pagioc@fcea.edu.uy">pagioc@fcea.edu.uy</a></p>
+                
+                <h3>¿Cuáles son los requisitos para ingresar a FCEA?</h3>
+                <p>Los requisitos para ingresar a las carreras impartidas en nuestra facultad están disponibles en este <a href="https://fcea.udelar.edu.uy/ingreso-a-fcea.html">enlace</a>, en el desplegable "Requisitos para ingresar a nuestras carreras de grado". Los mismos se encuentran desglosados por carrera.</p>
+                <h3>¿Qué documentación necesito para inscribirme a FCEA?</h3>
+                <p>La documentación necesaria para realizar el  ingreso a la facultad está disponible en este <a href="https://fcea.udelar.edu.uy/ingreso-a-fcea.html">enlace</a>, en el desplegable "Documentación solicitada".</p>
+                <p>Si eres estudiante de Administración Nacional de Educación Pública (ANEP) que culminó secundaria o UTU, debes solicitar en tu centro educativo que se registre tu egreso en el sistema informático de ANEP.
+                    Si provienes de centros de enseñanza privada, liceo militar o policial, debes solicitar la fórmula 69A dirigida a la Udelar. Por otros casos, leer atentamente la información de la web.</p>
+                <br>
+            </div>
+            <div class="info-2" style="display:none">
+                <h3>¿Cómo activo mi usuario Udelar?</h3>
+                <p>Una vez que tu preinscripción esté confirmada, te llegará por correo electrónico un código de activación el cual deberás utilizar en <a href="https://login.udelar.edu.uy">este sitio</a> para realizar la activación de tu usuario. Este paso es fundamental para la vida universitaria: te permitirá utilizar el Sistema de Gestión de Bedelías (SGAE) para inscribirte a materias o exámenes, acceder a EVA para obtener información de las materias y a Sala 9 para realizar actividades de evaluación virtuales. Puedes acceder a un tutorial sobre cómo realizar este proceso ingresando a <a href="https://login.udelar.edu.uy/activar.htm">este enlace</a>. 
+                    Te recordamos que tienes 72 horas para realizar este proceso. Luego de este plazo el código expira.</p>
+                <h3>¿Qué hago si el código no me llegó, expiró o no es válido?</h3>
+                <p>En este caso es necesario que envíes una solicitud al correo <a href="mailto:carrera.clave@fcea.edu.uy">carrera.clave@fcea.edu.uy</a> con asunto "Clave de Usuario de Bedelía", indicando la dirección de correo que utilizas y adjuntando un escaneo o fotografía de tu cédula. Recibirás un correo a la dirección que indicaste con el código en adjunto, el cual debes activar antes de pasadas las 72 horas.</p>
+                <h3>¿Qué son las charlas de inscripción y cómo asisto?</h3>
+                <p>Las charlas de inscripción serán los días 2, 4, 6 y 7 de agosto mediante la plataforma Zoom. Una vez que te inscribas a la facultad te llegará un correo desde el mail del Programa de Apoyo a la Generación de Ingreso y Orientación Curricular (PAGIOC) con el enlace para que puedas participar. La charla permitirá complementar el proceso de inscripción a FCEA. Se tratarán temas de interés para el ingreso a FCEA. Hablaremos sobre las materias que deberás cursar y la prueba diagnóstica, entre otras cuestiones.</p>
+                <h3>Hay errores en mi nombre, correo electrónico o algún otro dato de inscripción. ¿Qué puedo hacer?</h3>
+                <p>En SGAE hay un botón "Cambiar mi correo" en la sección "Datos personales" 
+                  Por cambios en datos filiatorios (reconocimiento, cambio de nombre, sexo, etc.) se debe entregar nueva partida de nacimiento en el mostrados de Bedelía.</p>
+                <p>Recuerda que, debido a la alta demanda, las respuestas pueden demorar algunos días.</p>
+                
+                <h3>¿Qué son y dónde accedo a los cursos propedéuticos?</h3>
+                <p>Los cursos propedéuticos tienen como objetivo reafirmar conocimientos y reforzar habilidades para el comienzo de la trayectoria educativa. La idea es que cada estudiante pueda conocer aspectos imprescindibles para su correcto desempeño en las materias de los primeros semestres. Los cursos stán disponibles tanto para la generación ingresante como para las generaciones anteriores. Ingresando al <a href="https://eva.ingresos.udelar.edu.uy/">enlace</a> puedes ver todos los cursos propedéuticos que están disponibles. Debes ingresar con tu usuario y contraseña al igual que ingresas en EVA FCEA y Bedelías. Puedes obtener más información en <a href="https://udelar.edu.uy/generacion2023/tomacarrera/">este enlace</a>.</p>    
+            </div>
+            <div class="info-3" style="display:none">
+                <h3>¿Cómo me inscribo a las Unidades Curriculares? </h3>
+                <p>Está a disposición un tutorial para inscribirte a las materias en adelante, Unidades Curriculares del primer semestre, y para matricularte a los cursos en EVA y Sala 9. Te recordamos que es muy importante que te matricules en el curso "Generación 2023 - 1° Semestre" en EVA y en el curso "Generación 2023" en Sala 9.</p>
+                <p>Puedes consultar el tutorial en <a href="https://fcea.udelar.edu.uy/images/micrositios/comunicacion/2023/2_Tutorial_para_matriculacin_a_SGAE_y_EVA_-_2023.pdf">este enlace</a>. También puede ser de utilidad <a href="https://www.youtube.com/watch?v=PpsYYBClIYA">este video.</a></p>
+                <h3>¿Qué es SGAE? </h3>
+                <p>El Sistema de Gestión Administrativa de la Enseñanza (SGAE) es una plataforma de la Udelar en la cual podés consultar los calendarios de cursos y exámenes, hacer la inscripción a cursos y exámenes, solicitar la escolaridad web, completar formularios de relevamiento a estudiantes y solicitar becas de apoyo de Bienestar Universitario, entre otras gestiones. Accede entrando a <a href="https://bedelias.udelar.edu.uy/">este enlace</a>. </p>
+                <p><strong>Nota:</strong> En todas las plataformas se ingresa con el mismo usuario y contraseña, es decir,  la cédula con todos los dígitos sin puntos ni guiones y la contraseña que hayas creado al activar tu usuario Udelar.</p>
+                <h3>¿Qué es EVA?</h3>
+                <p>El Entorno Virtual de Aprendizaje (EVA) es una plataforma educativa de la Universidad de la República y tiene como objetivo promover distintas modalidades de enseñanza y aprendizaje. Integra las Tecnologías de la Información y la Comunicación (TIC) en los procesos de enseñanza universitaria. El entorno propuesto cuenta con funcionalidades que permiten la comunicación fluida entre el equipo docente y estudiantes, con un papel más activo en la construcción de los conocimientos. Allí descargarás los materiales que necesitarás para estudiar: libros, ejercicios, pruebas anteriores, diapositivas, entre otros. Accede entrando a <a href="https://eva.fcea.udelar.edu.uy/">este enlace.</a></p>
+                <p><strong>Nota: </strong>En todas las plataformas se ingresa con el mismo usuario y contraseña, es decir, el cual es la cédula con todos los dígitos sin puntos ni guiones y la contraseña que hayas creado al activar tu usuario Udelar. Además, las plataformas EVA y Sala 9 se organizan por cursos, en los cuales debes automatricularte. </p>
+                <h3>¿Qué es Sala 9?</h3>
+                <p>La Sala 9 es el espacio virtual para la realización de evaluaciones online. Es una plataforma utilizada exclusivamente para la realización de revisiones, parciales y exámenes. Accede entrando a <a href="https://sala9.evaluacion.udelar.edu.uy/">este enlace</a>.</p>
+                <p><strong>Nota: </strong>En todas las plataformas se ingresa con el mismo usuario y contraseña, es decir, el cual es la cédula con todos los dígitos sin puntos ni guiones y la contraseña que hayas creado al activar tu usuario Udelar. Además, las plataformas EVA y Sala 9 se organizan por cursos, en los cuales debes automatricularte. Además, las plataformas EVA y Sala 9 se organizan por cursos, en los cuales debes automatricularte. </p>
+                <h3>No recuerdo mi contraseña de SGAE. ¿Cómo la recupero?</h3>
+                <p>Si no recuerdas tu clave de acceso, en <a href="https://login.udelar.edu.uy/olvidopass.html">este enlace</a> encontrarás información para recuperarla.</p>
+                <h3>¿Cómo me matriculo a un curso en EVA y a un curso en Sala 9?</h3>
+                <p>Se encuentra detallado en el siguiente <a href="https://youtu.be/PpsYYBClIYA">tutorial</a>.</p>
+                <h3>¿Qué hago si no puedo acceder a los cursos en EVA?</h3>
+                <p>Si no encuentras los cursos en EVA, es posible que estés en un enlace erróneo. Recuerda que el enlace correcto es eva.fcea.udelar.edu.uy (no ES eva.fcea.edu.uy). A su vez recuerda que el buscador es muy sensible a las tildes (por ejemplo, si buscas el curso “Generación 2023” no lo encontrarás si no ponés la tilde en la o). Te recordamos también que es posible que no todos los cursos del segundo semestre te aparezcan en este momento, pues algunos no están disponibles aún, pero lo estarán a la brevedad. Como disposición general, las y los docentes activarán las automatriculaciones a partir del inicio de clases.</p>
+                <h3>Encontré mi curso en EVA pero no me deja matricularme. ¿Qué hago? </h3>
+                <p>Si no te deja matricularte en el curso de EVA, o te solicita una contraseña que aún no posees, es porque el curso de EVA aún no está disponible, pero lo estará a la brevedad (en algún momento antes o a partir del comienzo de las clases). Te recomendamos ingresar a diario para chequearlo. La contraseña se encontrará en la descripción del curso.</p>
+                <h3>No me puedo matricular en el curso “Generación 2023 - 1° Semestre” en EVA o no lo encuentro. ¿Qué hago? 	</h3>
+                <p>Si no encuentras este curso en EVA, puede ser por dos causas. En primer lugar, es posible que estés en un enlace erróneo. Recuerda que nuestra dirección de EVA es <a href="https://eva.fcea.udelar.edu.uy/">eva.fcea.udelar.edu.uy</a>  (no es eva.fcea.edu.uy). En segundo lugar, recuerda que el buscador es muy sensible a las tildes (por ejemplo, si buscas el curso “Generación 2023” no lo encontrarás si no ponés la tilde en la letra o).</p>
+            </div>
+            <div class="info-4" style="display:none">
+              <h3>Organiza tu semana académica</h3>
+              <p>Una vez que ya te inscribiste en las materias a través del SGAE la facultad te sugiere organizar tu semana académica de tal forma que los horarios y los salones en los que se desarrollan las clases sean lo más cómodos para vos.</p>
+              <p>Existen varias formas de organizar tu semana académica. Te ofrecemos 7 opciones de mañana, 4 de tarde y 4 de noche, y una opción virtual de mañana y otra de noche. Estas combinaciones contemplan todas las materias que tenés que cursar en el primer semestre. Solo debes anotarte a las materias, no a los horarios. Los horarios son libres y tú eliges a cuál asistir.</p>
+              <p><strong>Beneficios de organizar tu semana en base a los horarios propuestos</strong></p>
+              <ul>
+                <li>Los horarios son libres, pero sugerimos que selecciones aquella opción que te queda mejor para poder cursar en un mismo grupo y salón todas las materias.</li>
+                <li>Recomendamos buscar los horarios menos concurridos para estar más cómodas y cómodos, y así mejorar el intercambio con pares y docentes. En un mismo horario hay varias opciones para el cursado. </li>
+                <li>No es obligatorio organizar la semana que te proponemos, puedes armar tus propios horarios e incluso combinarlos.</li>
+              </ul>
+              <br>
+              <h3>Próximamente más información</h3>
+              <br>
+              
+              <div class="acordeon">
+                <div class="acordeon__titulo color">
+                  MATUTINO [Horario de 8 a 12 horas]
+                </div>
+                <div class="acordeon__contenido color-borde">
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 1 - matutino</p>
+                  </div>
+                  <div id="data-grid-1" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 2 - matutino</p>
+                  </div>
+                  <div id="data-grid-2" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 3 - matutino</p>
+                  </div>
+                  <div id="data-grid-3" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 4 - matutino</p>
+                  </div>
+                  <div id="data-grid-4" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 5 - matutino</p>
+                  </div>
+                  <div id="data-grid-5" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 6 - matutino</p>
+                  </div>
+                  <div id="data-grid-6" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 7 - matutino</p>
+                  </div>
+                  <div id="data-grid-7" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 8 - matutino</p>
+                  </div>
+                  <div id="data-grid-7-2" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 9 - matutino</p>
+                  </div>
+                  <div id="data-grid-7-3" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 10 - matutino</p>
+                  </div>
+                  <div id="data-grid-7-4" class="grid-table">
+                  </div>
+                  <br>
+                </div>
+               
+              </div>
+              <div class="acordeon">
+                <div class="acordeon__titulo color">
+                  VESPERTINO [Horario de 13 a 17 horas]
+                </div>
+                <div class="acordeon__contenido color-borde">
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 1 - vespertino</p>
+                  </div>
+                  <div id="data-grid-8" class="grid-table">                   
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 2 - vespertino</p>
+                  </div>
+                  <div id="data-grid-8-1" class="grid-table">
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 3 - vespertino</p>
+                  </div>
+                  <div class="grid-table">                    
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 4 - vespertino</p>
+                  </div>
+                  <div class="grid-table">                   
+                  </div>
+                  <br>
+                </div>
+              </div>
+              <div class="acordeon">
+                <div class="acordeon__titulo color">
+                  NOCTURNO [Horario de 17 a 21 horas]
+                </div>
+                <div class="acordeon__contenido color-borde">
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 1 - nocturno</p>
+                  </div>
+                  <div id="data-grid-9" class="grid-table">                   
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 2 - nocturno</p>
+                  </div>
+                  <div id="data-grid-10" class="grid-table">                   
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 3 - nocturno</p>
+                  </div>
+                  <div id="data-grid-11" class="grid-table">                   
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 4 - nocturno</p>
+                  </div>
+                  <div id="data-grid-12" class="grid-table">                   
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 5 - nocturno</p>
+                  </div>
+                  <div id="data-grid-13" class="grid-table">                  
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 6 - nocturno</p>
+                  </div>
+                  <div id="data-grid-14" class="grid-table">                 
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 7 - nocturno</p>
+                  </div>
+                  <div id="data-grid-15" class="grid-table">                  
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 8 - nocturno</p>
+                  </div>
+                  <div id="data-grid-16" class="grid-table">                 
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 9 - nocturno</p>
+                  </div>
+                  <div id="data-grid-16-1" class="grid-table">                 
+                  </div>
+                  <div class="acordeon__wrapper">
+                    <p>PLAN HORARIO 10 - nocturno</p>
+                  </div>
+                  <div id="data-grid-16-2" class="grid-table">                 
+                  </div>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="info-5" style="display:none">
+                <h3>¿Qué es el Curso introductorio?</h3>
+                <p>El Curso introductorio es un espacio de información e integración cuyo objetivo es facilitar la inserción de la generación entrante a la vida universitaria, además de proveer información útil que evite o disminuya las dificultades que enfrentarán quienes ingresan.</p>
+                <p>Veremos, entre otros temas:</p>
+                <ul>
+                    <li>Cómo anotarse a las materias</li>
+                    <li>Cómo funcionan los horarios</li>
+                    <li>Cómo funcionan las calificaciones, los exámenes y revisiones</li>
+                    <li>Cómo se eligen las materias opcionales en las carreras</li>
+                    <li>Cómo funcionan la Udelar y la FCEA</li>
+                    <li>Perfiles de cada carrera</li>
+                </ul>
+                <h3>¿Cuándo es y cómo me inscribo?</h3>
+                <p>El curso será desde el 8 al 11 de agosto.</p>
+                <p>Para participar debes inscribirte a través del <a href="https://bedelias.udelar.edu.uy/">SGAE</a> (del mismo modo en el que te inscribís a una materia).</p>
+                <p>El curso contará con dos modalidades, una presencial y otra virtual. Habrá disponibles varios horarios que las y los estudiantes podrán seleccionar a través de su inscripción en el SGAE. Es importante que participes del total de días del curso ya que en cada encuentro se manejan diferentes temas relacionados a la facultad y a tu tránsito por la misma. El curso te va a permitir comprender el funcionamiento de tu nueva casa de estudios.</p>
+                <p>Si necesitas información adicional, tienes dudas y/o comentarios, puedes comunicarte escribiendo un correo a <a href="mailto:pagioc@fcea.edu.uy">pagioc@fcea.edu.uy</a></p>
+                <h3>Enlaces</h3>
+                <p>Las listas de curso introductorio se encuentran en el EVA de generación de ingreso. Los enlaces para los cursos virtuales les serán enviados por correo.</p>
+              </div>
+            <div class="info-6" style="display:none">
+                <h3>¿A qué Unidades Curriculares tengo que inscribirme en el primer semestre? </h3>
+                <p>Si te anotaste en las carreras Contador Público, Licenciado en Economía, Licenciado en Administración o Técnico en Administración, debes anotarte a cuatro materias: </p>
+                <ul>
+                    <li>Una materia es del área de Contabilidad: CONCEPTOS CONTABLES.</li>
+                    <li>Una materia es del área de Administración: ADMINISTRACIÓN Y GESTIÓN DE LAS ORGANIZACIONES I.</li>
+                    <li>Una materia es de matemática (Métodos Cuantitativos) y aquí debes optar entre: CÁLCULO 1 ó CÁLCULO 1A + CÁLCULO IB. Cálculo 1 es una materia semestral básica. Cálculo 1A + CÁLCULO 1B es una materia que se da en el primer semestre y segundo respectivamente. Las diferencias se verán con mayor profundidad en el curso introductorio y habrá charlas informativas al respecto. </li>
+                    <li>Por último, una materia es de Economía: INTRODUCCIÓN A LA MICROECONOMÍA o ANÁLISIS DE LAS INTERACCIONES ECONÓMICAS. En este caso, no debes optar: si el dígito verificador de tu cédula (el número después de la barra) es 3, 6 ó 9 te inscribís a Análisis de las Interacciones Económicas. Si el dígito verificador de tu cédula es 1, 2, 4, 5, 7, 8 ó 0 te inscribís a Introducción a la Microeconomía.</li>
+                </ul>
+                <p>Si tu carrera es Licenciado en Estadística, las materias dependerán del perfil que hayas elegido. Podés  consultarlas en la Grilla Curricular de <a href="https://fcea.udelar.edu.uy/depto-met-cuant-ensenanza/licenciatura-en-estadistica.html">este enlace</a>.</p>
+                <p>Si tu carrera es Tecnólogo en Gestión Universitaria, podes consultar las materias del primer semestre en la Grilla Curricular de <a href="https://fcea.udelar.edu.uy/ensenanza/las-carreras-de-fcea/243-tecnico-en-gestion-universitaria.html">este enlace</a>. </p>
+                <h3>¿Cúal es la estructura del primer semestre? </h3>
+                <p>A lo largo del primer año de estudios en esta facultad se imparten cuatro materias comunes en todas las carreras ofertadas. Podes encontrarlas en <a href="#estructura">Estructura del primer semestre</a></p>
+            </div>
+            <div class="info-7" style="display:none">
+              <h3>Calendario de actividades</h3>
+              <p>Accedé en <a href="https://fcea.udelar.edu.uy/horarios-y-calendarios/plan-de-actividades.html">este enlace</a> al calendario de actividades del año. </p>
+              <br>
+              <p><a href="https://fcea.udelar.edu.uy/horarios-y-calendarios/cursos-reglamentados/horarios.html">Horarios del semestre actual</a> </p>
+          </div>
+            <div class="info-8" style="display:none">
+                <h3>¿Qué es la Prueba diagnóstica?</h3>
+                <p>Desde 2017 la facultad ha realizado la Prueba diagnóstica con el fin de conocer mejor los niveles de matemática y comprensión lectora de la generación de ingreso. La misma está dirigida a las y los estudiantes que se inscribieron por primera vez a la facultad durante el año 2023. El objetivo de estas pruebas es poder adecuar la oferta de cursos a los conocimientos reales de las y los estudiantes y diseñar mecanismos complementarios de apoyo. No se requiere ningún tipo de preparación y como reconocimiento a la participación se otorgan puntos adicionales en algunas materias obligatorias del primer semestre (una vez las tengas aprobadas).
+                </p>
+                <h3>¿Cómo asisto?</h3>
+                <p>Este año la Prueba diagnóstica se realizará el 15 de agosto a las 17:30 horas. </p>
+                <p>De 8 a 15 hs será la prueba de comprensión lectora, por Sala 9 (virtual).</p>
+                <p>A las 17:30 hs será la prueba de matemática presencial y en diferentes salones. Tiene una duración estimada de una hora y media desde el comienzo de la prueba. No se permite el uso de calculadora.</p>
+                <p>En ellos se distribuirán las y los estudiantes según apellido:</p>
+                <ul>
+                  <li>Aula Magna de FCEA. Del apellido Acosta Albano, Santiago a Fariña González, Pedro Diego</li>
+                  <li>Salón 002 del Aulario del Área Social y Artística. Del apellido Febrero Áles, Carla María a Lotito González, Matías</li>
+                  <li>Salón 206 del Aulario del Área Social y Artística. Del apellido Luy Herrera, Dayana Ximena a Passerini Pesce, Joaquín</li>
+                  <li>Salón 207 del Aulario del Área Social y Artística. Del apellido Paz Conti, Matías a Salarrallan Pesce, Sabrina Anahí</li>
+                  <li>Salón 205 del Aulario del Área Social y Artística. Del apellido Sale Montaña, Sofía a Zurbano Fernández, Yessica Valeria</li>
+                </ul>
+                <p>Por consultas, puedes dirigirte a <a href="mailto:ingresos2023@fcea.edu.uy">ingresos2023@fcea.edu.uy</a></p>
+                <h3>Cosas a tener en cuenta para la Prueba diagnóstica</h3>
+                <p>
+                  <ul>
+                    <li>Como reconocimiento se otorgarán puntos adicionales en algunas materias obligatorias del primer semestre.</li>
+                    <li>No requiere que estudies ya que la prueba diagnóstica es un insumo para adecuar la oferta de cursos y para diseñar mecanismos complementarios de apoyo. Es un insumo de información personal y no se evaluará ni afectará a la rendición académica.</li>
+                    <li>Los pasos que tienes que seguir, antes de realizar la prueba de lectura y completar los formularios, son los siguientes:</li>
+                    <ul>
+                      <li>Ingresar a la dirección <a href="https://sala9.evaluacion.udelar.edu.uy">https://sala9.evaluacion.udelar.edu.uy</a></li>
+                      <li>Click al botón rojo “Entrar”. Te pedirá un usuario (número de CI, incluyendo dígito verificador, sin puntos ni guión) y contraseña (la misma con la que se ingresa al sistema de Bedelía).</li>
+                      <li>En la barra que dice "Buscar cursos", escribir las palabras: Generación 2023</li>
+                      <li>Hacer clic en el título. Te solicitará una clave de matriculación; debes utilizar la que te corresponda:</li>
+                      <ul>
+                        <li>Gen2023-Mvd1  para alumnos inscriptos en la Sede Montevideo</li>
+                        <li>Gen2023-Interior1  para alumnos inscriptos en Sedes del Interior</li>
+                        <li>Darle Click a matricularme</li>
+                      </ul>
+                    </ul>
+                    <li>Si se produce un problema con tu computadora se vuelve a ingresar y no se pierde lo que se avanzó. Si se cierra no se pierde la información y se puede volver a arrancar siempre que no haya terminado el tiempo.</li>
+                  </ul>
+                </p>
+                <p>Es importante que te matricules según la sede a la que te inscribiste, y NO según donde resides (no importa si vives en el interior, si te inscribiste a FCEA en Montevideo debes matricularte como Montevideo). </p>
+                <p>Ese día se suspenden las clases de los cursos del primer semestre durante todo el día.
+                  Una vez finalizada la prueba arrancan las actividades de bienvenida.</p>
+                <br>
+                <h3>Actividades de Bienvenida</h3>
+                <p>La bienvenida será posterior a la Prueba Diagnóstica, comenzando a las 19 h en el salón 001 del Aulario del Área Social y Artística. </p>
+                <ul>
+                  <li>19 hs DJ Calientacamas y merienda </li>
+                  <li>20 hs Palabra del decano y agrupaciones estudiantiles</li>
+                  <li>20:30 hs Sorteo</li>
+                </ul>             
+            </div>
+            <div class="info-9" style="display:none">
+                <h3>¿Cómo hago para desistir de una inscripción a una Unidad Curricular?</h3>
+                <p>Seleccionás la carrera y cliqueás calendario, allí se despliegan las Unidades Curriculares que ofrecen inscripción a curso y/o a examen.
+                    Seleccionás “borrar inscripción” (la opción está al final del renglón de cada Unidad Curricular, señalada en rojo) y presionás aceptar. El sistema genera un número de control de borrado, diferente al número de inscripción, para cada Unidad Curricular y por cada instancia a la que te borres.
+                    Verificación: dentro del Menú, cuando seleccionás “Consulta de inscripciones”, verás que allí te figuran todas las inscripciones existentes en Bedelía. De esta forma podrás comprobar que hayan quedado registradas las opciones elegidas.
+                </p>
+                <p>Recuerda anotar el número de control, ya que es tu único comprobante de que te has anotado o borrado.</p>
+                <p>Reclamos: se aceptarán reclamos sobre inscripciones y borrados únicamente con la presentación del número de control correspondiente.</p>
+            </div>
+        </div>
+    </section>
+    <section id="estructura">
+        <h2>Estructura del primer semestre de cursado</h2>
+        <div class="container">
+            <p>A lo largo del primer semestre de estudios en la facultad se imparten cinco materias comunes en todas las carreras ofertadas (excepto Estadística, que se ve más abajo). Estas son: </p>
+            <ol>
+                <li><strong>Conceptos Contables. </strong>Esta materia introduce en el uso de la información contable, entendida como una de las partes del sistema de una organización, que analiza el patrimonio y sus variaciones. Esta información la utilizan profesionales de la administración de una organización y terceras personas vinculadas a ella en el proceso de toma de decisiones.</li>
+                <br>
+                <li><strong>Administración y Gestión de las Organizaciones I Teórico/Práctico.</strong> Esta materia busca proporcionar una visión general e introductoria de la administración como actividad, campo de conocimiento y proceso de gestión. Se introducirá en conceptos básicos tomando a las organizaciones como objeto de estudio y, en particular, a las empresas en cuanto a sus funciones básicas, entorno y tipología. El curso T/P consiste en dos clases semanales de 120 minutos cada una. Se exponen los temas en forma conceptual y se analizan casos prácticos de aplicación. En general se trata de grupos a cargo de dos docentes que exponen el teórico y dirigen el análisis de los casos prácticos correspondientes.</li>
+                <br>
+                <li><strong>Cálculo. </strong>Todos los años la facultad realiza una Prueba diagnóstica con el fin de conocer los niveles de matemática y comprensión lectora de la nueva generación.<p> La Prueba diagnóstica en matemática es una evaluación que, sobre un total de 30 puntos, ayuda a elegir cuál curso de Cálculo (Cálculo 1 o Cálculo 1A + Cálculo 1B) es conveniente tomar, teniendo en cuenta los conocimientos de matemática adquiridos en la Educación Media, por eso:   </p> 
+                  <ul>
+                    <li>Si te inscribiste en Cálculo 1 y tu puntaje en la Prueba diagnòstica es menor o igual a 17 te recomendamos que te desmatricules de Cálculo 1 y te matricules en Cálculo 1A (para posteriormente cursar  Cálculo 1B).</li>
+                    <li>Si te inscribiste en Cálculo 1A y tu puntaje en la Prueba diagnóstica es mayor a 17 te sugerimos que te desmatricules de Cálculo 1A y te matricules en Cálculo 1.</li>
+                  </ul>
+                  <p>Todos los años la facultad realiza la Prueba diagnóstica con el fin de conocer los niveles de matemática y comprensión lectora de la generación que ingresa en cada período. 
+                    Este año las pruebas serán el martes 7 de marzo.</p>
+                  <p><strong>¿Qué diferencia hay entre Cálculo 1 y Cálculo 1A + Cálculo 1B?</strong></p>
+                  <p>Cálculo 1 es un curso básico de nivel universitario en donde se trabaja, entre otros conceptos y técnicas, con derivadas, integrales, aproximación de funciones por polinomios y series, presentando diversas aplicaciones a las ciencias económicas y a la administración. Es una Unidad Curricular semestral de 10 créditos, sugerida a estudiantes que obtengan un buen desempeño en la Prueba diagnóstica de matemática, en caso contrario se recomienda cursar Cálculo 1A y luego Cálculo 1B.</p>
+                  <p>Cálculo 1A y Cálculo 1B son dos cursos semestrales que se imparten en semestres consecutivos. A cada uno le corresponden 5 créditos y en conjunto equivalen al curso de Cálculo 1, es decir: si se aprueba Cálculo 1A y Cálculo 1B, se tiene aprobado Cálculo 1. Entre ambas Unidades Curriculares se repasan contenidos de Educación Media y se cubre el contenido especificado anteriormente para Cálculo 1. Cabe mencionar que Cálculo 1A es previa de Cálculo 1B. Se recomienda cursar Cálculo 1A y Cálculo 1B si se obtiene un bajo desempeño en la Prueba diagnóstica en matemática.</p>
+                  <p>Los resultados de la Prueba diagnóstica se publicarán en el EVA el miércoles 8 de marzo y se habilitará un período de inscripciones y desistimientos para Cálculo 1 y Cálculo 1A hasta el domingo 12 de marzo.</p>
+                  
+                </li>
+                <br>
+                <li><strong> Introducción a la Microeconomía (IM) o Análisis de las Interacciones Económicas (AIE). </strong>En Introducción a la Microeconomía (IM) se presentan los primeros conceptos básicos de economía y se da inicio al proceso de comprensión de las principales herramientas del análisis microeconómico. El curso describe y analiza el comportamiento y la toma de decisiones de los distintos agentes económicos en forma individual, así como en las interrelaciones que establecen en los mercados de bienes y factores, tanto en un mercado de competencia perfecta como imperfecta. 
+                <br>
+                <p>Análisis de las Interacciones Económicas (AIE) representa una primera aproximación a los problemas que la economía enfrenta como disciplina. El curso analiza la forma en que los individuos y las empresas toman decisiones en diversos contextos, la existencia de interacciones en las decisiones y los resultados a los que se arriba, además de la existencia de dilemas por la persecución de objetivos distintos. A su vez, se analiza el rol que las reglas de juego tienen en la distribución de los recursos, tanto si estas interacciones se dan dentro de mercados, como si son resultado de interacciones no contractuales. Estos conceptos se utilizarán aplicados al análisis de las relaciones laborales (entre empresa y trabajadores) y de las interacciones entre empresas y clientes.</p> 
+                  <br>
+                 <p> ¿A cuál de las dos materias debes inscribirte?</p>
+                  Si el dígito verificador de tu cédula (el número después de la barra) es 3, 6 ó 9 te inscribís a Análisis de las Interacciones Económicas.
+                  Si el dígito verificador de tu cédula es 1, 2, 4, 5, 7, 8 ó 0 te inscribís a Introducción a la Microeconomía.
+                </li>
+                <br>
+            </ol>
+            <p><strong>Materia específica del primer semestre para la Licenciatura en Estadística</strong></p>
+            <ol>
+                <li><strong>Estadística Descriptiva.</strong> El curso consiste en una introducción a tres elementos fundamentales para la Licenciatura en Estadística. Primero, una breve introducción a la estadística como disciplina independiente, sus objetivos y su método. Luego, se trabaja sobre herramientas básicas para describir datos de forma de transformar los datos en información de interés. Finalmente, se realiza una introducción al lenguaje de programación R, que es fundamental para cualquier análisis estadístico. Es el primer curso obligatorio para la Licenciatura en Estadística.</li>
+                <br>
+                <li><strong>Álgebra Lineal.</strong> Es una de las áreas básicas de la matemática. Las matrices, los determinantes, los sistemas de ecuaciones lineales y los vectores son los objetos que se estudian en este curso. En general las matrices y los vectores son abstracciones de los cuadros de doble entrada o las columnas de datos, que son formas usuales de presentar información. Las técnicas que se desarrollan en el curso de Álgebra Lineal dan
+                  herramientas para analizar de manera eficiente esta información, optimizar y tomar decisiones en múltiples aplicaciones de la economía,
+                  la administración y las finanzas. <br>
+                  El curso tiene pocos requisitos previos y casi no supone conocimientos de secundaria, aunque asume el manejo de las operaciones algebraicas
+                  básicas. Se repite en ambos semestres, vale 10 créditos y se desarrolla en una modalidad teórico-práctica.
+                  </li> 
+                  <li><strong>Cálculo 1.</strong> Es un curso básico de nivel universitario en donde se
+                    trabaja, entre otros conceptos y técnicas, con derivadas, integrales,
+                    aproximación de funciones por polinomios y series, presentando diversas
+                    aplicaciones a las ciencias económicas y a la administración.</li>               
+            </ol>
+        </div>
+    </section>
+    <div id="parallax_uno"></div>
+    <!--Acordeón de las carreras-->
+    <section id="carrerasFCEA">
+        <h2>Las carreras de FCEA</h2>
+        <div class="container">
+            <h3>Carreras en Montevideo</h3>
+            <br>
+          <div class="acordeon">
+            <div class="acordeon__titulo color">
+              Licenciatura en Administración
+            </div>
+            <div class="acordeon__contenido color-borde">
+              <div class="acordeon__wrapper">
+                <p><strong>Tipo:</strong> Carrera de Grado</p>
+                <p><strong>Duración: </strong>4 años</p>
+                <p><strong>Créditos: </strong>360</p>
+                <p><strong>Director de carrera:</strong> Prof. Javier Mari <a href="mailto: javier.mari@fcea.edu.uy"> javier.mari@fcea.edu.uy</a></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/depto-adm-ensenanza/lic-adm-ciencias-adm.html" target="_blank">Grilla Curricular</a></strong></p>
+                <br>
+                <p>
+                  La Licenciatura en Administración prepara profesionales con
+                  conocimientos adecuados para participar en la gestión y
+                  creación de empresas y otras organizaciones, utilizando sus
+                  recursos de manera efectiva y sustentable. El ámbito para el
+                  ejercicio de esta profesión es la gestión de las
+                  organizaciones y su rol específico es el desempeño de tareas
+                  de carácter gerencial, tanto en lo que refiere a las
+                  diferentes áreas (por ejemplo, Comercialización, Finanzas o
+                  Recursos Humanos) como la gerencia general.
+                </p>
+                <p>
+                  Quienes egresen contarán con formación para emprender y crear
+                  organizaciones, para realizar tareas de consultoría y
+                  asesoramiento y para desarrollar actividades de gestión en
+                  forma eficaz, sustentable y socialmente responsable, de forma
+                  de contribuir a un diálogo social amplio entre distintas
+                  organizaciones y al bienestar de la sociedad. Serán capaces de
+                  aplicar críticamente las teorías, técnicas e instrumentos de
+                  gestión perteneciente al fenómeno organizacional, trabajando
+                  en equipo. Sus conocimientos y competencias específicas se
+                  vinculan a las finanzas, a la comercialización, a la
+                  preparación de proyectos, a la gestión de personas y a la
+                  generación de procesos de cambio, de mejora y de innovación.
+                  Tienen aptitudes para comprender y analizar críticamente los
+                  procesos sociales, económicos, culturales y políticos que
+                  hacen al funcionamiento interno de las organizaciones, como
+                  también al contexto en el que desarrollan su actividad.
+                  Podrán, además, iniciar una trayectoria académica orientada a
+                  la generación y transmisión de conocimiento científico.
+                </p>
+                <br>
+               
+              </div>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon__titulo color">Licenciatura en Economía</div>
+            <div class="acordeon__contenido color-borde">
+              <div class="acordeon__wrapper">
+                <p><strong>Tipo:</strong> Título de Grado</p>
+                <p><strong>Duración: </strong>4 años</p>
+                <p><strong>Créditos: </strong>360</p>
+                <p><strong>Director de carrera: </strong>Prof. Mario Davrieux <a href="mailto:mario.davrieux@fcea.edu.uy">mario.davrieux@fcea.edu.uy</a></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/ensenanza-dpto-economia/licenciatura-en-economia.html" target="_blank">Grilla Curricular</a></strong></p>
+                <br>
+                <p>
+                  La Licenciatura en Economía brinda conocimientos que permiten
+                  formular, implementar y analizar las políticas públicas, así
+                  como asesorar a empresas o iniciar una trayectoria académica.
+                  Además de estudiar economía, la licenciatura se sirve de otras
+                  disciplinas del campo de las ciencias sociales y las
+                  humanidades. También está presente la formación en métodos
+                  cuantitativos y en el uso de técnicas o instrumentos de
+                  cómputo, así como en tecnologías de la información y
+                  comunicación.
+                </p>
+                <p>
+                  Quienes egresen de la Licenciatura en Economía podrán trabajar
+                  en el área de políticas públicas, en el área financiera, en el
+                  área empresarial y en el área académica. Los conocimientos
+                  adquiridos permiten generar y compartir conocimiento
+                  científico, y diseñar, implementar y evaluar políticas y
+                  programas públicos o de empresas, proyectos privados y de
+                  otras organizaciones.
+                </p>
+                <p>
+                  También podrá analizar la coyuntura macroeconómica y de
+                  economías sectoriales o regionales, así como del entorno
+                  económico, sin perder de vista los aspectos sociales y éticos.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon__titulo color">
+              Licenciatura en Estadística
+            </div>
+            <div class="acordeon__contenido color-borde">
+              <div class="acordeon__wrapper">
+                <p><strong>Tipo:</strong> Título de Grado</p>
+                <p><strong>Duración: </strong>4 años</p>
+                <p><strong>Créditos: </strong>360</p>
+                <p><strong>Director de carrera: </strong>Prof. Marco Scavino <a href="mailto:marco.scavino@fcea.edu.uy">marco.scavino@fcea.edu.uy</a></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/images/micrositios/dpto_metodos_cuantitativos/2023/info_estadistica_ingreso23.pdf">Información específica para nuevos estudiantes</a></strong></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/depto-met-cuant-ensenanza/licenciatura-en-estadistica.html" target="_blank">Grilla Curricular</a></strong></p>
+                <br>
+                <p>
+                  La Licenciatura en Estadística brinda conocimientos en
+                  planificación, ejecución y análisis de estudios estadísticos
+                  en los diversos sectores de actividad económica, social,
+                  política, de investigación operativa y actuarial. La finalidad
+                  es formar especialistas en estadística con énfasis en métodos
+                  estadísticos y con capacidad para adaptarse a nuevas
+                  situaciones y tecnologías.
+                </p>
+                <p>
+                  A lo largo de la formación, se incluyen disciplinas
+                  complementarias relacionadas con aspectos sociales y
+                  tecnológicos. La Licenciatura en Estadística implica el
+                  desarrollo de una capacidad crítica y de una actitud práctica
+                  en la resolución de problemas.
+                </p>
+                <p>
+                  Las actividades académicas relacionadas al campo de la
+                  estadística se organizan junto a las facultades de Ciencias
+                  (FCien) e Ingeniería (FIng).
+                </p>
+                <p>
+                  Quienes egresen de la Licenciatura en Estadística adquirirán
+                  la capacidad de planificar, ejecutar, procesar y analizar
+                  estudios estadísticos en diversas áreas del conocimiento,
+                  definiendo así cuatro perfiles de egreso: económico,
+                  demográfico actuarial, bioestadístico y tecnológico.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon__titulo color">Contador Público</div>
+            <div class="acordeon__contenido color-borde">
+              <div class="acordeon__wrapper">
+                <p><strong>Tipo:</strong> Título de Grado</p>
+                <p><strong>Duración: </strong>8 semestres/4 años</p>
+                <p><strong>Créditos: </strong>360</p>
+                <p><strong>Directora de carrera: </strong>Profa. Elena Sivori <a href="mailto:elena.sivori@fcea.edu.uy">elena.sivori@fcea.edu.uy</a></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/ensenanza/las-carreras-de-fcea/154-contador-publico.html" target="_blank">Grilla Curricular</a></strong></p>
+                <br>
+                <p>
+                  La carrera de Contador Público brinda conocimientos que
+                  servirán para actuar en las áreas relativas a la información
+                  contable, al control y a los aspectos tributarios y
+                  financieros de las organizaciones, permitiendo desempeñarse
+                  como gerentes en cualquiera de estas áreas.
+                </p>
+                <p>
+                  En el primer año de la carrera ya se adquieren herramientas
+                  para acceder al mercado laboral de forma rápida. Es por ello
+                  que la dinámica del cursado se adapta al mundo laboral y el
+                  plan de estudios de la carrera está adaptado a la pronta
+                  inserción del estudiantado en el mercado laboral.
+                </p>
+                <p>
+                  Quienes egresen tendrán la capacidad de participar en el
+                  diseño e implementación de sistemas tributarios así como
+                  asesorar en esta materia a todo tipo de organizaciones.
+                  También podrán ser parte de la constitución, fusión, escisión,
+                  liquidación y disolución de sociedades y asociaciones; podrán
+                  realizar peritajes y actuar en procedimientos judiciales que
+                  refieran a la materia contable, liquidaciones y rendiciones de
+                  cuentas. Además podrán monitorear, evaluar y opinar sobre los
+                  procesos de información y control y participar en la
+                  preparación, revisión y análisis de estados proyectados.
+                  Podrán trabajar en organismos estatales e integrar equipos
+                  multidisciplinarios con el objetivo de preparar y evaluar
+                  proyectos de inversión así como iniciar una trayectoria
+                  académica.
+                </p>
+                <p>
+                  Tendrán la habilidad de adecuar a la realidad de las
+                  organizaciones nacionales e internacionales modelos, teorías y
+                  métodos para alcanzar sistemas eficientes de información y
+                  control.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon__titulo color">
+              Tecnicatura en Administración
+            </div>
+            <div class="acordeon__contenido color-borde">
+              <div class="acordeon__wrapper">
+                <p><strong>Tipo:</strong> Tecnicatura</p>
+                <p><strong>Duración: </strong>5 semestres</p>
+                <p><strong>Créditos: </strong>225</p>
+                <p><strong>Director de carrera: </strong>Prof. Javier Mari <a href="mailto:javier.mari@fcea.edu.uy">javier.mari@fcea.edu.uy</a></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/depto-adm-ensenanza/tecnicatura-admin-ciencias-adm.html" target="_blank">Grilla Curricular</a></strong></p>
+                <br>
+                <p>
+                  La Tecnicatura en Administración prepara profesionales con una
+                  sólida formación general en Administración y Contabilidad en
+                  el marco de un programa académico de menor duración al del
+                  grado. Esto permite a las personas egresadas una rápida
+                  inserción en el mercado laboral y la continuación de sus
+                  estudios a través de las carreras de grado de la facultad.
+                </p>
+                <p>
+                  Quienes egresen de la Tecnicatura en Administración tendrán
+                  aptitudes para participar en la gestión de organizaciones
+                  públicas y privadas, y competencias para la aplicación de
+                  técnicas y procedimientos de mejora que favorezcan la
+                  utilización de recursos de manera efectiva y sustentable.
+                  Podrán acceder a cargos intermedios de una organización y
+                  participar en equipos multidisciplinarios con profesionales
+                  del área, contribuyendo de manera proactiva a la mejora de la
+                  gestión.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon__titulo color">
+              Tecnólogo en Gestión Universitaria (TGU)
+            </div>
+            <div class="acordeon__contenido color-borde">
+              <div class="acordeon__wrapper">
+                <p><strong>Tipo:</strong> Tecnólogo</p>
+                <p><strong>Duración: </strong>5 semestres</p>
+                <p><strong>Créditos: </strong>225</p>
+                <p><strong>Locación: </strong>Montevideo, CENUR</p>
+                <p><strong>Directora de carrera: </strong>Prof. Mariela Lembo <a href="mailto:marielalembo@gmail.com">marielalembo@gmail.com</a></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/ensenanza/las-carreras-de-fcea/243-tecnico-en-gestion-universitaria.html" target="_blank">Grilla Curricular</a></strong></p>
+                <br>
+                <p>
+                  El Tecnólogo en Gestión Universitaria es una carrera de la
+                  Facultad de Ciencias Económicas y de Administración con el
+                  aporte, en áreas específicas del conocimiento, de las
+                  Facultades de Humanidades y Ciencias de la Educación, de
+                  Psicología, de Medicina y de Información y Comunicación, de la
+                  Universidad de la República. Procura una formación
+                  interdisciplinaria con un fuerte énfasis en conocimientos,
+                  habilidades y herramientas para la gestión profesional de
+                  instituciones educativas, tanto públicas como privadas. Posee
+                  una amplia oferta de materias electivas para profundizar la
+                  formación en diversas áreas tales como administración, costos,
+                  marketing, gestión financiera, transformación y cambio
+                  organizacional y recursos humanos. Es el comienzo de un
+                  proceso que podrá posteriormente continuar tanto a nivel de
+                  grado como de posgrado, constituyendo su culminación, un muy
+                  importante avance para la obtención de la Licenciatura en
+                  Administración.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h3>Carreras en Centros Universitarios Regionales</h3>
+          <br>
+         <div class="acordeon">
+            <div class="acordeon__titulo color">
+              Ciclo Inicial Optativo - Opción Social (CIO-OS)
+            </div>
+            <div class="acordeon__contenido color-borde">
+              <div class="acordeon__wrapper">
+                <p><strong>Tipo:</strong> Ciclo inicial (pregrado)</p>
+                <p><strong>Duración: </strong>2 semestres</p>
+                <p><strong>Créditos: </strong>90</p>
+                <p><strong>Ubicación: </strong>Maldonado, Rocha, Treinta y Tres (CURE) y Salto (CENUR Litoral Norte)</p>
+                <p><strong>Coordinadora CIO Social: </strong>Rossana Cantieri <a href="mailto:rcantieri@cure.edu.uy">rcantieri@cure.edu.uy</a></p>
+                <p><strong>Referente en Salto: </strong>Cecilia Durán <a href="mailto:coordinacion.cioas@gmail.com">coordinacion.cioas@gmail.com</a></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/ensenanza/carreras-en-centros-universitarios-regionales/174-ciclo-inicial-optativo-opcion-social-cio-os.html" target="_blank">Grilla Curricular</a></strong></p>
+                <br>
+                <p>
+                  Los Ciclos Iniciales Optativos son una nueva forma de ingreso a la Universidad de la República, especialmente diseñada para los Centros Universitarios del interior del país, complementaria del tradicional ingreso por carreras. Tiene como finalidad brindar una formación general de nivel universitario y posibilitar el acceso a varias carreras de la Udelar. El CIO-OS brinda una aproximación general y genérica al Área Social y Artística y acreditará un primer nivel de estudios universitarios básicos en Ciencias Sociales y Humanas (no es un título intermedio ni de tecnicatura).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon__titulo color">
+              Tecnólogo en Administración y Contabilidad (TAC)
+            </div>
+            <div class="acordeon__contenido color-borde">
+              <div class="acordeon__wrapper">
+                <p><strong>Tipo:</strong> Tecnólogo</p>
+                <p><strong>Duración: </strong>5 semestres</p>
+                <p><strong>Créditos: </strong>225</p>
+                <p><strong>Ubicación: </strong>Lavalleja, Maldonado, Rocha, Tacuarembó y Treinta y Tres.</p>
+                <p><strong>Sede Tacuarembó, mención en Agroindustria y Comunicación Organizacional</strong></p>
+                <p><strong>Referente académico: </strong>Ana Gómez González <a href="mailto:tecnologoadmycont@gmail.com">tecnologoadmycont@gmail.com</a></p>
+                <p><strong>Centro Universitario Regional Este (CURE), Sedes: Maldonado, Rocha, Treinta y Tres y Lavalleja</strong></p>
+                <p><strong>Mención en Turismo, Gestión Ambiental, Salud y Minería.</strong></p>
+                <p><strong>Referente Académico: </strong>Mauro Mendiburu <a href="mailto:coordinaciontac@cure.edu.uy">coordinaciontac@cure.edu.uy</a></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/depto-adm-ensenanza/tac-ciencias-adm.html" target="_blank">Grilla Curricular</a></strong></p>
+                <br>
+                <p>
+                  Los Ciclos Iniciales Optativos son una nueva forma de ingreso a la Universidad de la República, especialmente diseñada para los Centros Universitarios del interior del país, complementaria del tradicional ingreso por carreras. Tiene como finalidad brindar una formación general de nivel universitario y posibilitar el acceso a varias carreras de la Udelar. El CIO-OS brinda una aproximación general y genérica al Área Social y Artística y acreditará un primer nivel de estudios universitarios básicos en Ciencias Sociales y Humanas (no es un título intermedio ni de tecnicatura).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon__titulo color">
+              Licenciatura en Economía Agrícola y Gestión de Agronegocios
+            </div>
+            <div class="acordeon__contenido color-borde">
+              <div class="acordeon__wrapper">
+                <p><strong>Tipo:</strong> Licenciatura</p>
+                <p><strong>Duración: </strong>4 años</p>
+                <p><strong>Créditos: </strong>360</p>
+                <p><strong>Ubicación: </strong>Sede Tacuarembó - Centro Universitario Regional (CENUR) Noreste.</p>
+                <p><strong>Directora de carrera: </strong>Prof. Virginia Morales Olmos <a href="mailto:virginia.morales@cut.edu.uy">virginia.morales@cut.edu.uy</a></p>
+                <p><strong><a href="https://fcea.udelar.edu.uy/ensenanza/carreras-en-centros-universitarios-regionales/6292-licenciatura-en-economia-agricola-y-gestion-de-agronegocios.html" target="_blank">Grilla Curricular</a></strong></p>
+                <br>
+                <p>
+                  La Licenciatura en Economía Agrícola y Gestión de Agronegocios es una oferta que busca formar profesionales con conocimientos en las áreas de gestión, contabilidad y economía con énfasis en las principales cadenas de valor. Busca desarrollar y fortalecer las capacidades de los estudiantes en aspectos teóricos y metodológicos a partir de un enfoque multidisciplinario, que tome como eje los desafíos vinculados a sistemas productivos modernos y multifuncionales e insertos en cadenas de valor a nivel nacional e internacional, atendiendo al desarrollo territorial. Por otra parte, trata de impartir en el estudiante una visión amplia que enfatiza el desarrollo de la capacidad de análisis en la realidad nacional e internacional.
+                </p>
+                <p>La carrera considera aspectos tanto micro como macroeconómicos, formación en métodos cuantitativos, toma de decisiones, gestión de recursos naturales, economía ambiental, innovación, planificación estratégica, gestión, formulación de políticas, contabilidad e impuestos, con el foco en temas agropecuarios. La capacidad de trabajo en equipo para la comprensión de los problemas complejos formará parte de la orientación para el análisis y comunicación entre los distintos conocimientos.</p>
+              </div>
+            </div>
+          </div>
+         </div>
+        
+      </section>
+      <section id="info-estudiantes">
+        <h2>Información solicitada a estudiantes</h2>
+        <div class="container">
+            <h3>¿Qué es el Formulario continuo de grado o FormA? (Obligatorio)</h3>
+            <p>El Formulario continuo de grado o FormA es anual, obligatorio y por carrera. Tiene como objetivo disponer de información sobre la población universitaria. Dicha información es recabada y se considera componente fundamental en la definición y evaluación de la gestión y políticas universitarias. Todas y todos los estudiantes de la Universidad de la República tienen que completarlo, independientemente del año de ingreso a la Udelar. Se accede a través de estudiantes.udelar.edu.uy y una vez allí es necesario ingresar con el número de documento y la clave de Bedelía. El formulario se habilita en tres períodos para completarlo. De no completar este formulario en fecha, no será posible inscribirse a cursos y exámenes de la carrera hasta que no se complete. </p>
+            <p>Contacto: <a href="mailto:bedelia@fcea.edu.uy">bedelia@fcea.edu.uy</a></p>
+        </div>
+        <br> 
+        <div class="container">
+            <h3>¿Qué es la Encuesta de percepción estudiantil?</h3>
+            <p>Esta encuesta es un instrumento diseñado para recabar la opinión de las y los estudiantes de la facultad sobre diversos aspectos de las Unidades Curriculares y sus docentes y tiene como objetivo la evaluación formativa docente. En base a la información recabada, se apoyará a docentes en el desarrollo profesional de su práctica considerando aspectos pedagógicos y didácticos y a las Unidades Curriculares en el desarrollo de sus metodologías de enseñanza. Como consecuencia, estas acciones apuntan a la mejora de la calidad del desarrollo formativo de las y los estudiantes de FCEA. La encuesta consta de dos partes: la evaluación perceptiva de la Unidad Curricular y la evaluación perceptiva de docentes. Ambas partes son independientes entre sí. Cada estudiante podrá evaluar las Unidades Curriculares en las que se inscribió. La encuesta es anónima y completarla lleva entre 5 y 10 minutos. Se realiza por EVA en los meses de julio y diciembre.</p>
+        </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="sedes-grupo">
+          <div class="sedes">
+            <p><strong>EDIFICIO CENTRAL</strong></p>
+            <p>Edificio principal de la Facultad Av. Gonzalo Ramírez 1926, Montevideo</p>
+          </div>
+          <div class="sedes">
+            <p><strong>AULARIO DEL ÁREA SOCIAL Y ARTÍSTICA</strong></p>
+            <p>Av. Gonzalo Ramírez 1915, Montevideo</p>
+          </div>
+          <div class="sedes">
+            <p><strong>EDIFICIO POLIFUNCIONAL JOSÉ LUIS MASSERA (FARO)</strong></p>
+            <p>Av. Julio Herrera y Reissig 633, Montevideo.</p>
+          </div>
+          <div class="sedes">
+            <p><strong>EDIFICIO DE INVESTIGACIÓN Y POSGRADOS</strong></p>
+            <p>Lauro Müller 1921, Montevideo</p>
+          </div>
+        </div>
+        <div class="sedes-grupo">
+          <div class="sedes">
+            <p><strong>SEDE MALDONADO</strong></p>
+            <p>Calle Tacuarembó entre Bvar. Artigas y Av. Aparicio Saravia 4225 5326</p>
+            <p><a style="color: #fff;" href="mailto:bedelia-maldonado@cure.edu.uy">bedelia-maldonado@cure.edu.uy</a></p>
+          </div>
+          <div class="sedes">
+            <p><strong>SEDE TREINTA Y TRES</strong></p>
+            <p>Ruta 8 Km. 282, ciudad de Treinta y Tres 4453 0597</p>
+            <p><a style="color: #fff;" href="mailto:bedelia33@cure.edu.uy"> bedelia33@cure.edu.uy</a></p>
+          </div>
+          <div class="sedes">
+            <p><strong>OFICINA DEL CURE EN LAVALLEJA</strong></p>
+            <p>Local del CURE en Batlle casi Sarandí frente al Liceo Nº1 Eduardo Fabini, Minas 4444 2009</p>
+            <p><a style="color: #fff;" href="mailto:secretaria-lavalleja@cure.edu.uy"> secretaria-lavalleja@cure.edu.uy</a></p>
+          </div>
+          <div class="sedes">
+            <p><strong>SEDE TACUAREMBÓ</strong> </p>
+            <p>Campus: Ruta 5, km. 386,200 Sede Centro: 25 de mayo 320 esq. Domingo Catalina 4632 3911, 4632 1663, 4633 8073, 4633 8074</p>
+            <p><a style="color: #fff;" href="mailto:bedelia@cut.edu.uy">bedelia@cut.edu.uy</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="icons">
+            <li><a target="_blank" href="https://www.facebook.com/FCEA.UDELAR" class="icon fa-facebook"></a></li>
+            <li><a target="_blank" href="https://twitter.com/FCEA_UdelaR" class="icon fa-twitter"></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/fceaudelar/" class="icon fa-instagram"></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/c/FCEA_U" class="icon fa-youtube"></a></li>
+        </ul>
+    </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/ea6cb07878.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
